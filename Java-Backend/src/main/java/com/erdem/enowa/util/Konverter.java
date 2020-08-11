@@ -30,7 +30,7 @@ public class Konverter {
 			BaumLocationResponse baumLocation=new BaumLocationResponse();
 			baumLocation.setBaumId(baum.getId());
 			GeoLocationDTO geoLocationDTO=new GeoLocationDTO();
-			geoLocationDTO.setLatidude(baum.getLocation().getLatidude());
+			geoLocationDTO.setLatidude(baum.getLocation().getLatitude());
 			geoLocationDTO.setLongitude(baum.getLocation().getLongitude());
 			baumLocation.setLocation(geoLocationDTO);
 			baumLocationList.add(baumLocation);

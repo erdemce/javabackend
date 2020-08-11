@@ -28,22 +28,22 @@ public class Baum {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="nummer",nullable=false)
+	@Column(name="nummer",nullable=false,length =20)
 	private long nummer;
 	
 	@Column(name="pflanzdatum", nullable=false)
 	private Date pflanzdatum;
 	
 	@ManyToOne(optional = false)
-	@JoinColumn(name="spezies_id")
+	@JoinColumn(name="spezies_id",nullable=false)
 	private Spezies spezies;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name="baum_id")
+	@JoinColumn(name="baum_id",nullable=false)
 	private List<Befund> befunde;
 	
 	
 	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="location_id")
+	@JoinColumn(name="location_id",nullable=false)
 	private GeoLocation location;
 }

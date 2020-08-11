@@ -23,14 +23,14 @@ public class Strasse {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="verwaltungsKuerzel", nullable=false)
+	@Column(name="verwaltungsKuerzel", nullable=false,length=20)
 	private String verwaltungsKuerzel;
 	
-	@Column(name="name", unique = false, nullable=false)
+	@Column(name="name", unique = false, nullable=false,length=50)
 	private String name;
 
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name="strasse_id")
+	@JoinColumn(name="strasse_id",nullable=false)
 	private List<Baum> baeume;
 	
 	

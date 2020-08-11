@@ -29,8 +29,8 @@ public class Stadt {
 	@Column(name="name", unique = true, nullable=false)
 	private String name;
 	
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name="stadt_id")
+	@OneToMany(cascade = CascadeType.PERSIST)
+	@JoinColumn(name="stadt_id",nullable=false)
 	private List<Strasse> strassen;
 	
 }

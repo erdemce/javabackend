@@ -19,8 +19,8 @@ public class GeoLocation {
 	private Integer id;
 	
 	
-	@Column(name="latidude", nullable=false)
-	private double latidude;
+	@Column(name="latitude", nullable=false)
+	private double latitude;
 	
 	@Column(name="longitude", nullable=false)
 	private double longitude;
