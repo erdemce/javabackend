@@ -1,7 +1,4 @@
-package com.erdem.enowa.dto.response;
-
-import com.erdem.enowa.dto.GeoLocationDTO;
-import com.erdem.enowa.entity.GeoLocation;
+package com.erdem.enowa.dto;
 
 import lombok.Getter;
 import lombok.Setter;

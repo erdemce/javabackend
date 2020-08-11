@@ -1,15 +1,13 @@
-package com.erdem.enowa.dto.response;
+package com.erdem.enowa.dto;
 
 import java.sql.Date;
-
-import com.erdem.enowa.dto.SpeziesDTO;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class BaumDetailResponse {
+public class BaumDetaillDTO {
 	
 	private long nummer;
 	

@@ -5,6 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import com.erdem.enowa.constraints.Constraints;
 import com.erdem.enowa.repo.SpeziesRepo;
 import com.erdem.enowa.repo.StadtRepo;
 
@@ -34,11 +35,18 @@ public class DataLoader implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		
 		speziesRepo.saveAll(datagenerator.getAllRndmSpezies());
-		for (int i = 0; i < 0; i++) {
+		for (int i = 0; i < Constraints.ZAHLDERSTAEDTE; i++) {
 			stadtRepo.save(datagenerator.generateStadt());
 			System.out.println(i+". Stadt speichert");
 		}
 		
 	}
+	/*
+	 * TODO
+	 * data kontrol
+	 * data yukleme sekil
+	 * sabitler
+	 * dokumentasyon
+	 */
 
 }

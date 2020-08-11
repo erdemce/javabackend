@@ -105,7 +105,7 @@ public class Datagenarator {
 		
 		rndmStrasse.setBaeume(rndBaeume);
 		
-		
+		System.out.println("strasse cretaed");
 		return rndmStrasse;
 		
 	}
