@@ -125,7 +125,7 @@ public class Datagenarator {
 	}
 
 	/*
-	 * um eine Strasse yu erstellen
+	 * um eine Strasse zu erstellen
 	 */
 	private Strasse generateStrasse() {
 
@@ -158,7 +158,6 @@ public class Datagenarator {
 			// Es werden 250 verschiedene Spezies unterschieden. In einer Straße
 			//stehen aber im allgemeinen Bäume maximal 10 verschiedener Spezies
 			// Deshalb soll ich eine zufaellige Id-list von Spezies erstellen
-
 			int zahlSpezies = RandomUtils.nextInt(1, Constraints.MAXANZAHLDERSPEZIESINEINERSTRASSE+1);
 			List<Integer> speziesIndexlistefuerStrasse = new ArrayList<>();
 
@@ -191,12 +190,9 @@ public class Datagenarator {
 				Baum baum = generateBaum(speziesIndexlistefuerStrasse, beginPunktDerStrasse);
 				bauemeliste.add(baum);
 			}
-
 			strasse.setBaeume(bauemeliste);
-
 			strasseRepo.save(strasse);
 		}
-
 	}
 	/*
 	 * um einen Baum und dazugehörige Befunde zu erstellen

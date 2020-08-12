@@ -28,9 +28,5 @@ public class DataLoader implements ApplicationRunner {
 			
 		}	
 	}
-	/*
-	 * TODO
-	 * dokumentasyon
-	 */
-
+	
 

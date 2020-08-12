@@ -23,13 +23,13 @@ public class Stadt {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="plz", unique = true, nullable=false)
+	@Column(name="plz", unique = true, nullable=false, length =10)
 	private String plz;
 	
-	@Column(name="name", unique = true, nullable=false)
+	@Column(name="name", unique = true, nullable=false, length =50)
 	private String name;
 	
-	@OneToMany(cascade = CascadeType.PERSIST)
+	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name="stadt_id",nullable=false)
 	private List<Strasse> strassen;
 	

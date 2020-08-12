@@ -36,11 +36,11 @@ public class GlobalExceptionHandler {
 	}
 	
 	@ExceptionHandler(Exception.class)
-	public ResponseEntity<Object> restExceptıonHandler(Exception e, WebRequest request){
+	public ResponseEntity<Object> restExceptionHandler(Exception e, WebRequest request){
 		
 		Map<String, Object> body = new HashMap<>();
         body.put("timestamp", LocalDateTime.now());
-        body.put("message", "ups..Es gibt einen Fehler...");
+        body.put("message", "oops..Es gibt einen Fehler...");
 
         return new ResponseEntity<>(body, HttpStatus.BAD_REQUEST);
 		

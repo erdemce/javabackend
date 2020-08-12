@@ -1,6 +1,5 @@
 package com.erdem.enowa.customexception;
 
-import org.hibernate.mapping.Constraint;
 
 import com.erdem.enowa.constraints.Constraints;
 

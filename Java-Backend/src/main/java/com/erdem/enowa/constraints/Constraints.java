@@ -25,6 +25,6 @@ public class Constraints {
 	
 	public static final int ANZAHLDERSPEZIES=250;
 	
-	public static final int MAXANZAHLDERSPEZIESINEINERSTRASSE=250;
+	public static final int MAXANZAHLDERSPEZIESINEINERSTRASSE=10;
 
 }

@@ -18,10 +18,10 @@ public class Spezies {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="botanischerName", nullable=false)
+	@Column(name="botanischerName", nullable=false,length =60)
 	private String botanischerName;
 	
-	@Column(name="trivialName", nullable=false)
+	@Column(name="trivialName", nullable=false, length =40)
 	private String trivialName;
 	
 }
