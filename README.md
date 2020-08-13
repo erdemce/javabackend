@@ -3,8 +3,8 @@
 ## Projekt ausführen
  
 1. Öffnen Sie das Terminal und navigieren Sie zum Projektverzeichnis
-2. Führen Sie den Befehl aus: ```mvn clean install -DskipTests```
-3. Führen Sie den Befehl aus: ```mvn clean package -DskipTest```
+2. Führen Sie den Befehl aus: ```mvn clean install –DskipTests=true```
+3. Führen Sie den Befehl aus: ```mvn clean package –DskipTests=true```
 
 ## Images erstellen und Docker-Container-Log anzeigen
 
