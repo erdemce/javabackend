@@ -1,4 +1,4 @@
-package com.erdem.enowa.service;
+package com.erdem.enowa.service.impl;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import com.erdem.enowa.dto.BaumDetaillDTO;
 import com.erdem.enowa.dto.BefundDTO;
 import com.erdem.enowa.entity.Baum;
 import com.erdem.enowa.repo.BaumRepo;
+import com.erdem.enowa.service.IBaumService;
 import com.erdem.enowa.util.Konverter;
 
 @Service
