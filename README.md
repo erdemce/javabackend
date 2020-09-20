@@ -1,4 +1,4 @@
-# Spring Boot Java-Backend Projekt with Postgresql bei der Benutzung Docker-Compose
+# Spring Boot Java-Backend Projekt mit Postgresql bei der Benutzung Docker-Compose
 
 ## Projekt ausführen
  
